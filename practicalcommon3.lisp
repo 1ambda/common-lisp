@@ -53,6 +53,10 @@
 (defun delete-person (selector)
   (setf *person-db* (remove-if selector *person-db*)))
 		      
-		      
-
+(defun where2 (&key name age address)
+  #'(lambda (row)
+      (and
+       (if name    (equal (getf row :name)  name)  t)
+       (if age   (equal (getf row :age) age) t)
+       (if address   (equal (getf row :address) address) t))))		      
 
