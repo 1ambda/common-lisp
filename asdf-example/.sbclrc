@@ -1,0 +1,10 @@
+;;; The following lines added by ql:add-to-init-file:
+(require "asdf")
+
+(defun push-systems (systems)
+  (if systems
+    (progn
+      (push (car systems) asdf:*central-registry*)
+      (push-systems (cdr systems)))))
+
+(push-systems (directory "lisp_systems/*"))
