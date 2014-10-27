@@ -1,8 +1,9 @@
-Lisp Note
+common-lisp note
 ===
 
-2014-03-13
+2014-10-27
 
 1. Practical Common Lisp
 2. Land of Lisp
 3. ANSI Common Lisp
+4. [CLOS](ihttp://1ambda.github.io/clos-common-lisp-object-system/)
